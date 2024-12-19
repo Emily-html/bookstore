@@ -183,7 +183,7 @@ localStorage.setItem('src',JSON.stringify(retrievedArray));
 
                     }      
                     brray.pop();
-                    array[i]=0;
+                   for(i;i<5;i++) array[i]=0;
                     localStorage.setItem("fun",JSON.stringify(brray));
                     localStorage.setItem("src",JSON.stringify(array));
                 
@@ -205,7 +205,7 @@ array[i-1]=array[i];
 
         }      
         brray.pop();
-        array[i]=0;
+        for(i;i<5;i++) array[i]=0;
         localStorage.setItem("fun",JSON.stringify(brray));
         localStorage.setItem("src",JSON.stringify(array));
     
@@ -227,7 +227,7 @@ array[i-1]=array[i];
 
                     }      
                     brray.pop();
-                    array[i]=0;
+                    for(i;i<5;i++)   array[i]=0;
                     localStorage.setItem("fun",JSON.stringify(brray));
                     localStorage.setItem("src",JSON.stringify(array));
                 
@@ -249,7 +249,7 @@ array[i-1]=array[i];
 
         }      
         brray.pop();
-        array[i]=0;
+        for(i;i<5;i++) array[i]=0;
         localStorage.setItem("fun",JSON.stringify(brray));
         localStorage.setItem("src",JSON.stringify(array));
     
@@ -266,7 +266,7 @@ array[i-1]=array[i];
 
            
         brray.pop();
-        array[i]=0;
+        for(i;i<5;i++)  array[i]=0;
         localStorage.setItem("fun",JSON.stringify(brray));
         localStorage.setItem("src",JSON.stringify(array));
     
@@ -275,17 +275,21 @@ array[i-1]=array[i];
 function sum(){
 var a=JSON.parse(localStorage.getItem("fun"));
 var l=a.length;
+var array=JSON.parse(localStorage.getItem("src"));
 var i;
 var totals=0;
 for(i=0;i<l;i++){
+    if(array[i]!=0)
 switch(a[i]){
     case "c1()":totals+=7.41;break;
     case "c2()":totals+=1.97;break;
     case "c3()":totals+=1.99;break;
     case "c4()":totals+=6.13;break; 
     case "c5()":totals+=2.3;break;
+  
 }
 }
+totals=Math.round(totals*100)/100;
 document.getElementById("totals").innerHTML="$"+totals;
 }
                 
