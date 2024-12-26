@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img id="p1" src="logo.png" alt="Logo"></a> 
+        <a href="page1.html?olink=shop.html"><img id="p2" src="more24.png" alt="More"></a>
+    </div> 
+    <div class="controls">
+        <button id="crea" onclick="create()">Create a cart:</button>
+        <button id="event" onclick="events()">Orders:</button>
+        <button id="summ" onclick="sum()">Totals:</button>
+    </div>
+    <div id="cart">
+        <p id="totals"></p>
+        <div class="order">
+            <img src="" id="c1" >
+            <p id="value1"></p>
+            <button onclick="d1()"><img src="" id="bin1" ></button>
+            </div>
+            <div class="order">
+                <img src="" id="c2" >
+                <p id="value2"></p>
+                <button onclick="d2()"><img src="" id="bin2" ></button></div>
+                <div class="order">
+                    <img src="" id="c3" >
+                    <p id="value3"></p>
+                    <button onclick="d3()"><img src="" id="bin3"></button></div>
+                    <div class="order">
+                        <img src="" id="c4" >
+                        <p id="value4"></p>
+                        <button onclick="d4()"><img src="" id="bin4" "></button></div>
+                        <div class="order">
+                            <img src="" id="c5">
+                            <p id="value5"></p>
+                            <button onclick="d5()"><img src="" id="bin5" ></button>
+       
+        
+    </div>
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header img {
+    height: 50px;
+}
+
+.controls {
+    margin-top: 20px;
+   button {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8198b1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+}
+
+
+
+ #cart {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+} 
+
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+   
+}
+
+.order img {
+    height: auto;
+    width: 120px;
+
+}
+
+.order p {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+button{
+    border:none;
+    background-color: white;
+}
+button img {
+    width: 10px;
+   
+}
+    </style>
+</body>
+</html>
