@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script></head>
+<body>
+    <form action="detail.php" method="post">
+    </form>
+    <div class="header">
+
+        <a href="index.html"><img id= "p1" src="logo.png" ></a> 
+
+        <a href="page1.html?olink=table.html"><img  id= "p2" src="more24.png" ></a>
+       </div> 
+    <div class="tab">
+   <table>
+    <tr>
+        <th>Book</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Service</th>
+    </tr>
+    <tr>
+        <td><img src="classic1.jpg" ></td>
+        <td><p>The Echo of Old Books:A Novel</p> </td>
+        <td><a href="book1.html"><p>Classic —— Literature</p></a></td>
+        <td>
+            <a id="a1" href="shop.html?fun1=c1()">Add to Cart</a> <br>
+            <a id="a2" href="http://localhost:8081/bookstore/bookstore2/?book_id=1">Detail</a>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="classic2.jpg" ></td>
+        <td><p>The Family Across the Street:A Totally unputdownable Psychological Thriller with a Shocking Twist </p></td>
+        <td><a href="book1.html"><p>Classic —— Literature</p></a></td>
+        <td>
+            <a id="a1" href="shop.html?fun2=c2()">Add to Cart</a> <br>
+            <a id="a2" href="http://localhost:8081/bookstore/bookstore2/?book_id=2">Detail</a>
+        
+        </td>
+
+    </tr>
+    <tr>
+        <td><img src="classic3.jpg" ></td>
+        <td><p>Reminders of Him:A Novel</p></td>
+        <td><a href="book1.html"><p>Classic —— Literature</p></a></td>
+        <td>
+            <a id="a1" href="shop.html?fun3=c3()">Add to Cart</a> <br>
+            <a id="a2" href="http://localhost:8081/bookstore/bookstore2/?book_id=3">Detail</a>
+        </td>
+
+
+    </tr>
+    <tr>
+        <td><img src="hot-sale1.jpg"></td>
+        <td><p>The Five Wishes of Mr.Murray McBride</p></td>
+         <td><a href="book2.html"><p>Hotsale —— Novel</p></a></td>
+         <td>
+            <a id="a1" href="shop.html?fun4=c4()">Add to Cart</a> <br>
+            <a id="a2" href="http://localhost:8081/bookstore/bookstore2/?book_id=4">Detail</a>
+         </td>
+
+    </tr>
+    <tr>
+        <td><img src="hot-sale2.jpg" ></td>
+        <td><p>Promise Me</p></td>
+        <td><a href="book2.html"><p>Hotsale —— Novel</p></a></td>
+        <td>
+            <a id="a1" href="shop.html?fun5=c5()">Add to Cart</a> 
+            <a id="a2" href="index.php?book_id=5">Detail</a>
+        </td>
+
+    </tr>
+    
+   </table> 
+</div>
+<style>
+  body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header img {
+    height: 50px;
+}
+
+.tab {
+    width: 80%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #8198b1;
+    color: white;
+}
+
+a {
+    color: #8198b1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}  
+</style>
+
+
+
+
+
+</body>
+</html>
